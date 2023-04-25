@@ -1,0 +1,515 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 3.5em;font-family: 'Marko One'; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;font-family: 'Sriracha';}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(0, 0, 0); }
+
+header{
+    background-color: rgb(255, 255, 255);
+
+    background-image: url("media/arriba1.png");
+    background-size: cover;
+    background-position: center center;
+    width:500px;
+    height:150px;
+       
+    
+
+}
+
+header .container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+header .container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10%;
+    width:100%;
+    height:40%;
+    justify-content: space-evenly;
+    margin: 8px;
+
+}
+
+header a{
+    padding: 9px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 5px  solid blue;
+    border-radius: 41px;
+    background-color: #74ABFF;
+    color: black;
+    height: 50px;
+    
+
+}
+
+header a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+
+#hero h1{
+    color: rgb(0, 0, 0);
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#bibliografia .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#hero .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#estudios{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+
+#estudios .container{
+    padding: 150px 12px;
+}
+
+#estudios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#estudios p{
+    display: none;
+}
+
+#estudios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        #ffffff,
+        #CAD6FF
+    )
+
+}
+
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        #ffffff,
+        #CAD6FF
+    )
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        #ffffff,
+        #CAD6FF
+    )
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        #ffffff,
+        #CAD6FF
+    )
+}
+
+#habilidades .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+
+#habilidades li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#contacto .container1{
+
+    text-align: left;
+    padding: 250px 10px;
+}
+
+#contacto .container2{
+    text-align: right;
+    padding: 150px 12px;
+}
+
+#contacto li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 2%;
+        padding-right: 10px;
+
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #hero .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #hero .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hero h2{
+        margin-top: 0px;
+    }
+
+
+    #hero .img-container{
+        background-image: url("media/michi.jpg");
+        background-size: cover;
+        background-position: center center;
+        width:350px;
+        height:350px;
+        border-radius:150px;
+        
+        
+    }
+
+
+    #bibliografia .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #bibliografia .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #bibliografia h2{
+        margin-top: 0px;
+    }
+
+
+    #bibliografia .img-container{
+        background-image: url("media/yo.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+        border-radius:150px;
+    }
+
+    #estudios .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #estudios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #estudios h2{
+        font-size: 4em;
+    }
+
+    #estudios h3{
+        margin-top: 0;
+    }
+
+    #estudios .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: #CAD6FF;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            #ffffff,
+            #CAD6FF
+        )
+
+    }
+
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            #ffffff,
+            #CAD6FF
+        )
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            #ffffff,
+            #CAD6FF
+        )
+    }
+
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            #ffffff,
+            #CAD6FF
+        )
+
+    }
+
+    #habilidades{
+        background-image: url("media/habilidades.png");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #habilidades .container{
+        text-align: initial;
+    }
+
+    #habilidades ul{
+        margin-left: 100px;
+    }
+
+
+    #contacto .container1{
+        text-align: initial;
+    }
+
+    #contacto .container2{
+        text-align: initial;
+    }
+
+    #contacot ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #habilidades{
+        background-position-x: calc(100vw - 800px);
+    }
+    #contacto{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+
+
+#contacto form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+  
+#contacto {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+  
+#contacto input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+#contacto input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#contacto input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media screen{
+
+    .header > .container1 .container2{
+     print-color-adjust: exact;
+    }
+    div nav> .a{
+     display: flex;
+     flex-direction: column;  
+     print-color-adjust: exact;  
+    }
+
+    .hero > .container{
+    print-color-adjust: exact;
+    }
+    div > .h2{
+    display: flex;
+    flex-direction: column;  
+    print-color-adjust: exact;  
+    }
+}
